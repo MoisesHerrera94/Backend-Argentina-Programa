@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +14,6 @@ public class Proyecto {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nombre;
-    private List<String> tecnologias;
+    private String tecnologias;
     private String link;
 }

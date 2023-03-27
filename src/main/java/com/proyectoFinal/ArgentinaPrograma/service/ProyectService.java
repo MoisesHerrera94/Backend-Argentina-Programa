@@ -31,4 +31,9 @@ public class ProyectService implements IProyectService{
     public void editarProyecto(Proyecto pro) {
         proyectoRepo.save(pro);
     }
+
+    @Override
+    public Proyecto buscarProyecto(Long id) {
+        return proyectoRepo.findById(id).orElse(null);
+    }
 }
